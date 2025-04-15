@@ -33,7 +33,7 @@ flutter analyze
 - Run Formatter:
 
 ```
-flutter format .
+dart format .
 ```
 
 ## Basic Features

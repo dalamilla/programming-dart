@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:math';
 
 class DiceRollerPage extends StatefulWidget {
-  const DiceRollerPage({Key? key, required this.title}) : super(key: key);
+  const DiceRollerPage({super.key, required this.title});
 
   final String title;
 
@@ -28,24 +28,27 @@ class _DiceRollerPageState extends State<DiceRollerPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title:
-              Text(widget.title, style: const TextStyle(color: Colors.white))),
+        title: Text(widget.title, style: const TextStyle(color: Colors.white)),
+      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Image.asset("assets/images/dice_$_diceNumber.png",
-                height: 300, fit: BoxFit.fill),
+            Image.asset(
+              "assets/images/dice_$_diceNumber.png",
+              height: 300,
+              fit: BoxFit.fill,
+            ),
             const SizedBox(height: 20),
             TextButton(
-              child: const Text("Roll"),
               onPressed: _rollDice,
               style: TextButton.styleFrom(
                 minimumSize: const Size(150, 50),
-                primary: Colors.white,
+                foregroundColor: Colors.white,
                 backgroundColor: Colors.grey,
-                onSurface: Colors.grey,
+                disabledForegroundColor: Colors.grey,
               ),
+              child: const Text("Roll"),
             ),
           ],
         ),
