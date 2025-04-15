@@ -1,5 +1,5 @@
 /// Solution of Euler project problems.
-library euler;
+library;
 
 export 'src/euler_001.dart' show euler001;
 export 'src/euler_002.dart' show euler002;

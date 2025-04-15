@@ -2,7 +2,7 @@
 /// 1 to 10 without any remainder.
 /// What is the smallest positive number that is evenly divisible by all of the
 /// numbers from 1 to 20?
-library euler;
+library;
 
 /// Solution of fifth Euler problem.
 /// The function take the value [n] to limit the number for evenly divisible positive.
